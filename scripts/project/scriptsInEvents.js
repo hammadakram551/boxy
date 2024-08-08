@@ -3,7 +3,7 @@
 
 const scriptsInEvents = {
 
-	async Events_Event2_Act1(runtime, localVars)
+	async Events_Event2_Act2(runtime, localVars)
 	{
 		
 		

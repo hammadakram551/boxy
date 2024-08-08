@@ -4887,7 +4887,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Browser,
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.System.Cnds.OnLayoutStart,
-		C3.ScriptsInEvents.Events_Event2_Act1,
+		C3.Plugins.System.Acts.Wait,
+		C3.ScriptsInEvents.Events_Event2_Act2,
 		C3.Plugins.Camera3D.Acts.LookAtPosition,
 		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Sprite.Exps.ZElevation,
@@ -5177,6 +5178,7 @@ function or(l, r)
 
 self.C3_ExpressionFuncs = [
 		() => "Setup",
+		() => 1,
 		() => 192,
 		p => {
 			const n0 = p._GetNode(0);
@@ -5192,7 +5194,6 @@ self.C3_ExpressionFuncs = [
 			return () => (n0.ExpObject() + 12);
 		},
 		() => 0,
-		() => 1,
 		() => "hideFader",
 		() => 100,
 		() => "BoxSpawn",
