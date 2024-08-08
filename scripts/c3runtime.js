@@ -4905,6 +4905,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.Sprite.Exps.X,
+		C3.Plugins.Sprite.Acts.SetX,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
 		C3.Behaviors.TileMovement.Acts.SimulateControl,
 		C3.Behaviors.TileMovement.Cnds.IsMovingDirection,
@@ -4914,7 +4916,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.ForEach,
 		C3.Plugins.Shape3D.Acts.SetPos,
 		C3.Plugins.Shape3D.Exps.X,
-		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Shape3D.Exps.Count,
 		C3.Plugins.System.Exps.loopindex,
 		C3.Plugins.Shape3D.Exps.Width,
@@ -5018,6 +5019,8 @@ self.C3_JsPropNameTable = [
 	{AJAX: 0},
 	{JSON: 0},
 	{Browser: 0},
+	{Sprite2: 0},
+	{Sprite3: 0},
 	{Boxes: 0},
 	{score: 0},
 	{atkdelay: 0},
@@ -5070,6 +5073,8 @@ self.InstanceType = {
 	AJAX: class extends self.IInstance {},
 	JSON: class extends self.IJSONInstance {},
 	Browser: class extends self.IInstance {},
+	Sprite2: class extends self.ISpriteInstance {},
+	Sprite3: class extends self.ISpriteInstance {},
 	Boxes: class extends self.I3DShapeInstance {}
 }
 }
@@ -5223,6 +5228,14 @@ self.C3_ExpressionFuncs = [
 		() => "POST",
 		() => "Player",
 		() => 64,
+		p => {
+			const n0 = p._GetNode(0);
+			return () => (n0.ExpObject() - 25);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => (n0.ExpObject() + 25);
+		},
 		() => "Left",
 		() => "Right",
 		() => "Run",
