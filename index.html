@@ -25,8 +25,15 @@
 <script>
 Telegram.WebApp.ready();
 window.authData = Telegram.WebApp.initData;
-//const authiiiii = Telegram.WebApp.initData;
+	if (!window.authData.includes("username")) {
+    alert("Your Telegram username is not set. Please set a username in Telegram to proceed.");
+    // Optionally, close the Web App if the username is not set
+    Telegram.WebApp.close();
+} else {
+    
 alert("Authdata is: "+Telegram.WebApp.initData)
+}
+//const authiiiii = Telegram.WebApp.initData;
 if (location.protocol.substr(0, 4) === "file")
 {
 	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
