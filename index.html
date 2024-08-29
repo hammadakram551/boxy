@@ -28,10 +28,10 @@ window.authData = Telegram.WebApp.initData;
 	if (!window.authData.includes("username")) {
     alert("Your Telegram username is not set. Please set a username in Telegram to proceed.");
     // Optionally, close the Web App if the username is not set
-    Telegram.WebApp.close();
+    // Telegram.WebApp.close();
 } else {
     
-alert("Your username is set. Authdata is: "+Telegram.WebApp.initData)
+alert("Your username is set and Authdata is: "+Telegram.WebApp.initData)
 }
 //const authiiiii = Telegram.WebApp.initData;
 if (location.protocol.substr(0, 4) === "file")
