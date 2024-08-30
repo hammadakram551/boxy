@@ -279,7 +279,8 @@ const scriptsInEvents = {
 				alert("currentScore: "+currentScore)
 				runtime.globalVars.Previous_Score_var = currentScore;
 				
-		alert("runtime.globalVars.Previous_Score_var: "+runtime.globalVars.Previous_Score_var+" typeof currentScore: "+typeof(currentScore))
+		alert("runtime.globalVars.Previous_Score_var: "+runtime.globalVars.Previous_Score_var);
+		alert(" typeof currentScore: "+typeof(currentScore));
 		//         currentScoreSpan.innerText = currentScore;
 		      }
 		    })
