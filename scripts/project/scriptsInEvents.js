@@ -277,10 +277,11 @@ const scriptsInEvents = {
 		        // Update the current score
 		        currentScore = scores;
 				alert("currentScore: "+currentScore)
+				alert(" typeof currentScore: "+typeof(currentScore));
+				alert("runtime.globalVars.Previous_Score_var: "+runtime.globalVars.Previous_Score_var);
+		
 				runtime.globalVars.Previous_Score_var = currentScore;
 				
-		alert("runtime.globalVars.Previous_Score_var: "+runtime.globalVars.Previous_Score_var);
-		alert(" typeof currentScore: "+typeof(currentScore));
 		//         currentScoreSpan.innerText = currentScore;
 		      }
 		    })
