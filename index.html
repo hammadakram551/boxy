@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="style.css">
 
 
+
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
 
@@ -25,8 +26,17 @@
 <script>
 Telegram.WebApp.ready();
 window.authData = Telegram.WebApp.initData;
+	alert("username is: "+window.authData.includes("username"))
+	if (!window.authData.includes("username")) {
+    alert("Your Telegram username is not set. Please set a username in Telegram to proceed.");
+    // Optionally, close the Web App if the username is not set
+    // Telegram.WebApp.close();
+} else {
+    
+// alert("Your username is set and Authdata is: "+Telegram.WebApp.initData)
+alert("Your username is set and Authdata is")		
+}
 //const authiiiii = Telegram.WebApp.initData;
-alert(Telegram.WebApp.initData)
 if (location.protocol.substr(0, 4) === "file")
 {
 	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
