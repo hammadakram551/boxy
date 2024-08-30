@@ -5240,7 +5240,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Audio.Acts.SetPaused,
 		C3.ScriptsInEvents.Events_Event70_Act2,
 		C3.ScriptsInEvents.Landing_eventSheet_Event1_Act2,
-		C3.Plugins.PlatformInfo.Cnds.IsOnWindows,
+		C3.Plugins.PlatformInfo.Cnds.IsCordovaExport,
 		C3.ScriptsInEvents.Landing_eventSheet_Event2_Act1,
 		C3.ScriptsInEvents.Main_eventSheet_Event1_Act2,
 		C3.ScriptsInEvents.Main_eventSheet_Event3_Act1,
