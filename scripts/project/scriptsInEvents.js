@@ -225,7 +225,7 @@ const scriptsInEvents = {
 		
 		if(window.authData.includes("username")){
 		runtime.globalVars.isUsername = true;
-		
+		alert("Username is present: "+ window.authData.includes("username"));
 		// function func(){
 		// const currentScoreSpan = document.getElementById('current-score');
 		    let currentScore = 0;
@@ -292,7 +292,7 @@ const scriptsInEvents = {
 		
 	},
 
-	async Landing_eventSheet_Event2_Act1(runtime, localVars)
+	async Landing_eventSheet_Event3_Act1(runtime, localVars)
 	{
 		//dgdgd
 	},
