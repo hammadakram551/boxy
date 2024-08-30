@@ -263,18 +263,19 @@ const scriptsInEvents = {
 		//         authStatus.innerText = 'Authorization succeeded!';
 		//         gameDiv.style.display = 'block';
 		        alert('Authorization succeeded:'+ data);
-		        window.authToken = data.token;
-				authToken = data.token;// Save the token for later use
-		        window.userId = data.userId; // Save the userId for later use
-				runtime.globalVars.wallet_address_var = "Your Wallet Address:\n"+data.wallet_address
-				runtime.globalVars.username = data.username;
+				const{token,scores,wallet_address,tele_id } = data
+		        window.authToken = token;
+				authToken = token;// Save the token for later use
+		        window.userId = tele_id; // Save the userId for later use
+				runtime.globalVars.wallet_address_var = "Your Wallet Address:\n"+wallet_address
+		// 		runtime.globalVars.username = data.username;
 		
 		        // Display the token for debugging purposes
 		        alert('JWT Token: ' + authToken);
 		        console.log('JWT Token:', authToken);
 		
 		        // Update the current score
-		        currentScore = data.currentScore;
+		        currentScore = scores;
 				alert("currentScore: "+currentScore)
 				runtime.globalVars.Previous_Score_var = currentScore;
 		//         currentScoreSpan.innerText = currentScore;
