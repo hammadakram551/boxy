@@ -25,7 +25,7 @@ const scriptsInEvents = {
 		
 		// // runtime.globalVars.authDataVar = window.authData;
 		// // authDataDiv.innerText = 
-		// alert("authData "+window.authData);
+		// //alert("authData "+window.authData);
 		// console.log("after");
 		
 		
@@ -40,29 +40,29 @@ const scriptsInEvents = {
 		//       if (data.error) {
 		// //         authStatus.innerText = 'Authorization failed!';
 		//         console.error('Authorization failed:', data.error);
-		// 		alert('Authorization failed: '+ data.error)
+		// 		//alert('Authorization failed: '+ data.error)
 		//       } else {
 		// //         authStatus.innerText = 'Authorization succeeded!';
 		// //         gameDiv.style.display = 'block';
-		//         alert('Authorization succeeded:'+ data);
+		//         //alert('Authorization succeeded:'+ data);
 		//         window.authToken = data.token;
 		// 		authToken = data.token;// Save the token for later use
 		//         window.userId = data.userId; // Save the userId for later use
 		
 		//         // Display the token for debugging purposes
-		//         alert('JWT Token: ' + authToken);
+		//         //alert('JWT Token: ' + authToken);
 		//         console.log('JWT Token:', authToken);
 		
 		//         // Update the current score
 		//         currentScore = data.currentScore;
-		// 		alert("currentScore: "+currentScore)
+		// 		//alert("currentScore: "+currentScore)
 		// //         currentScoreSpan.innerText = currentScore;
 		//       }
 		//     })
 		//     .catch(error => {
-		//       alert('Error during authorization.');
+		//       //alert('Error during authorization.');
 		//       console.error('Error:', error);
-		// 	  alert('error: '+ error)
+		// 	  //alert('error: '+ error)
 		//     });
 		
 		
@@ -75,13 +75,13 @@ const scriptsInEvents = {
 	{
 
 // //     function submitScore() {
-// 	alert("Score is: "+runtime.globalVars.score)
+// 	//alert("Score is: "+runtime.globalVars.score)
 // 	let authToken = window.authToken;
 // 	let user_id = window.userId;
 // // 	runtime.globalVars.authToken = window.authToken;
 // // 	const currentScoreSpan = document.getElementById('current-score');
 //     let currentScore = 0;
-//       alert("userId: "+user_id+" And JWT is "+window.authToken);
+//       //alert("userId: "+user_id+" And JWT is "+window.authToken);
 //       fetch('https://popular-hyena-proven.ngrok-free.app/balance/submit', {
 //         method: 'POST', // Ensure this is a POST request
 //         headers: {
@@ -95,10 +95,10 @@ const scriptsInEvents = {
 //       .then(data => {
 //         if (data.error) {
 //           console.error('Error updating score:', data.error);
-// 		  alert('Error updating score: '+ data.error);
+// 		  //alert('Error updating score: '+ data.error);
 //         } else {
 //           console.log('Score updated successfully:', data);
-//           alert('Score updated successfully! JWT Token: ' + authToken);
+//           //alert('Score updated successfully! JWT Token: ' + authToken);
 //           console.log('JWT Token used for updating score:', authToken);
           
 // 		  fetch('https://popular-hyena-proven.ngrok-free.app/balance/score', {
@@ -109,27 +109,27 @@ const scriptsInEvents = {
 //         },
 // })
 //           .then(response => {
-//     alert('Response status: '+ response.status);
-//     alert('Response headers: '+ response.headers);
+//     //alert('Response status: '+ response.status);
+//     //alert('Response headers: '+ response.headers);
 //     return response.text(); // Change to text to log the full response
 // })
 // .then(responseText => {
-//     alert('Response text: '+ responseText);
+//     //alert('Response text: '+ responseText);
 // 	console.log('Response text: ', responseText);
 //     const scoreData = JSON.parse(responseText);
 //     currentScore = scoreData[0]?.scores || 0;
-//     alert("Score is "+ currentScore);
+//     //alert("Score is "+ currentScore);
 // })
 //           .catch(error => {console.error('Error fetching updated score:', error)
 		  
-// 		  alert('Error fetching updated score: '+ error);
-// 		  alert( "And jwt is: "+window.authToken)
+// 		  //alert('Error fetching updated score: '+ error);
+// 		  //alert( "And jwt is: "+window.authToken)
 // 		  });
 //         }
 //       })
 //       .catch(error => {
 //         console.error('Error submitting score:', error);
-//         alert('Error submitting score. Please try again. error: '+error);
+//         //alert('Error submitting score. Please try again. error: '+error);
 //       });
 // //     }
 
@@ -139,20 +139,20 @@ const scriptsInEvents = {
 
 	async Events_Event4_Act3(runtime, localVars)
 	{
-		alert("helllllllll")
+		//alert("helllllllll")
 	},
 
 	async Events_Event64_Act16(runtime, localVars)
 	{
 
 //     function submitScore() {
-	alert("Score is: "+runtime.globalVars.score)
+	//alert("Score is: "+runtime.globalVars.score)
 	let authToken = window.authToken;
 	let user_id = window.userId;
 // 	runtime.globalVars.authToken = window.authToken;
 // 	const currentScoreSpan = document.getElementById('current-score');
     let currentScore = 0;
-      alert("userId: "+user_id+" And JWT is "+window.authToken);
+      //alert("userId: "+user_id+" And JWT is "+window.authToken);
       fetch('https://popular-hyena-proven.ngrok-free.app/balance/submit', {
         method: 'POST', // Ensure this is a POST request
         headers: {
@@ -166,10 +166,10 @@ const scriptsInEvents = {
       .then(data => {
         if (data.error) {
           console.error('Error updating score:', data.error);
-		  alert('Error updating score: '+ data.error);
+		  //alert('Error updating score: '+ data.error);
         } else {
           console.log('Score updated successfully:', data);
-          alert('Score updated successfully! JWT Token: ' + authToken);
+          //alert('Score updated successfully! JWT Token: ' + authToken);
           console.log('JWT Token used for updating score:', authToken);
           
 		  fetch('https://popular-hyena-proven.ngrok-free.app/balance/score', {
@@ -180,27 +180,27 @@ const scriptsInEvents = {
         },
 })
           .then(response => {
-    alert('Response status: '+ response.status);
-    alert('Response headers: '+ response.headers);
+    //alert('Response status: '+ response.status);
+    //alert('Response headers: '+ response.headers);
     return response.text(); // Change to text to log the full response
 })
 .then(responseText => {
-    alert('Response text: '+ responseText);
+    //alert('Response text: '+ responseText);
 	console.log('Response text: ', responseText);
     const scoreData = JSON.parse(responseText);
     currentScore = scoreData[0]?.scores || 0;
-    alert("Score is "+ currentScore);
+    //alert("Score is "+ currentScore);
 })
           .catch(error => {console.error('Error fetching updated score:', error)
 		  
-		  alert('Error fetching updated score: '+ error);
-		  alert( "And jwt is: "+window.authToken)
+		  //alert('Error fetching updated score: '+ error);
+		  //alert( "And jwt is: "+window.authToken)
 		  });
         }
       })
       .catch(error => {
         console.error('Error submitting score:', error);
-        alert('Error submitting score. Please try again. error: '+error);
+        //alert('Error submitting score. Please try again. error: '+error);
       });
 //     }
 
@@ -225,7 +225,7 @@ const scriptsInEvents = {
 		
 		if(window.authData.includes("username")){
 		runtime.globalVars.isUsername = true;
-		alert("Username is present: "+ window.authData.includes("username"));
+		//alert("Username is present: "+ window.authData.includes("username"));
 		// function func(){
 		// const currentScoreSpan = document.getElementById('current-score');
 		    let currentScore = 0;
@@ -243,7 +243,7 @@ const scriptsInEvents = {
 		
 		// runtime.globalVars.authDataVar = window.authData;
 		// authDataDiv.innerText = 
-		alert("authData "+window.authData);
+		//alert("authData "+window.authData);
 		console.log("after");
 		
 		
@@ -258,11 +258,11 @@ const scriptsInEvents = {
 		      if (data.error) {
 		//         authStatus.innerText = 'Authorization failed!';
 		        console.error('Authorization failed:', data.error);
-				alert('Authorization failed: '+ data.error)
+				//alert('Authorization failed: '+ data.error)
 		      } else {
 		//         authStatus.innerText = 'Authorization succeeded!';
 		//         gameDiv.style.display = 'block';
-		        alert('Authorization succeeded:'+ data);
+		        //alert('Authorization succeeded:'+ data);
 				const{token,scores,wallet_address,tele_id } = data
 		        window.authToken = token;
 				authToken = token;// Save the token for later use
@@ -271,15 +271,15 @@ const scriptsInEvents = {
 		// 		runtime.globalVars.username = data.username;
 		
 		        // Display the token for debugging purposes
-		        alert('JWT Token: ' + authToken);
+		        //alert('JWT Token: ' + authToken);
 		        console.log('JWT Token:', authToken);
 		
 		        // Update the current score
 		        currentScore = scores;
-				alert(typeof(currentScore));
-				alert("currentScore: "+currentScore)
+				//alert(typeof(currentScore));
+				//alert("currentScore: "+currentScore)
 				
-				alert("runtime.globalVars.Previous_Score_var: "+runtime.globalVars.Previous_Score_var);
+				//alert("runtime.globalVars.Previous_Score_var: "+runtime.globalVars.Previous_Score_var);
 		
 				runtime.globalVars.Previous_Score_var = currentScore;
 				
@@ -287,13 +287,13 @@ const scriptsInEvents = {
 		      }
 		    })
 		    .catch(error => {
-		      alert('Error during authorization.');
+		      //alert('Error during authorization.');
 		      console.error('Error:', error);
-			  alert('error: '+ error)
+			  //alert('error: '+ error)
 		    });
 		
 		}else{
-		alert("window.authdata is:" +window.authData)
+		//alert("window.authdata is:" +window.authData)
 		}
 		// }
 		// window.func = func;
@@ -641,7 +641,7 @@ runtime.globalVars.walletMsg = `Please set your BSC wallet Address.\nInvo will b
 
 	async Add_wallet_events_Event5_Act2(runtime, localVars)
 	{
-alert(runtime.globalVars.new_address)
+//alert(runtime.globalVars.new_address)
 const walletAddress = runtime.globalVars.new_address;
 
 const expectedLength = '0x8FFf93E810a2eDaaFc326eDEE51071DA9d398E83'.length;
