@@ -219,7 +219,7 @@ const scriptsInEvents = {
 		}
 	},
 
-	async Landing_eventSheet_Event1_Act2(runtime, localVars)
+	async Landing_eventSheet_Event3_Act2(runtime, localVars)
 	{
 		
 		
@@ -286,15 +286,12 @@ const scriptsInEvents = {
 			  alert('error: '+ error)
 		    });
 		
+		}else{
+		alert("window.authdata is:" +window.authData)
 		}
 		// }
 		// window.func = func;
 		
-	},
-
-	async Landing_eventSheet_Event3_Act1(runtime, localVars)
-	{
-		//dgdgd
 	},
 
 	async Main_eventSheet_Event1_Act2(runtime, localVars)
