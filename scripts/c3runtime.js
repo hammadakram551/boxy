@@ -5239,7 +5239,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SetTimescale,
 		C3.Plugins.Audio.Acts.SetPaused,
 		C3.ScriptsInEvents.Events_Event70_Act2,
-		C3.Plugins.PlatformInfo.Cnds.IsOniOS,
+		C3.Plugins.PlatformInfo.Cnds.IsOnWindows,
 		C3.Plugins.PlatformInfo.Cnds.IsOnAndroid,
 		C3.ScriptsInEvents.Landing_eventSheet_Event3_Act2,
 		C3.Plugins.System.Acts.Signal,
