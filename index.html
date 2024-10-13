@@ -24,16 +24,17 @@
 <script>
 Telegram.WebApp.ready();
 window.authData = Telegram.WebApp.initData;
-	alert("is username present: "+window.authData.includes("username"))
-	if (!window.authData.includes("username")) {
-    alert("Your Telegram username is not set. Please set a username in Telegram to proceed. Thank You");
-    // Optionally, close the Web App if the username is not set
-    // Telegram.WebApp.close();
-} else {
+	alert("janiiiiii")
+// 	alert("is username present: "+window.authData.includes("username"))   commented from here
+// 	if (!window.authData.includes("username")) {
+//     alert("Your Telegram username is not set. Please set a username in Telegram to proceed. Thank You");
+//     // Optionally, close the Web App if the username is not set
+//     // Telegram.WebApp.close();
+// } else {
     
-// alert("Your username is set and Authdata is: "+Telegram.WebApp.initData)
-alert("Your username is set and Authdata is"+window.authData);		
-}
+// // alert("Your username is set and Authdata is: "+Telegram.WebApp.initData)
+// alert("Your username is set and Authdata is"+window.authData);		
+// } to here
 if (location.protocol.substr(0, 4) === "file")
 {
 	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
